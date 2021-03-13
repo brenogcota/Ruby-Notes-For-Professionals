@@ -164,7 +164,7 @@ when "ruby"
 when "node"
   puts "lang is node"
 else
-  puts "oh no"
+  puts "lang is undefined"
 end
 
 
@@ -179,6 +179,11 @@ for i in [1, 2, 3, 4]
   puts "Number is #{i}"
 end
 
+# Range
+for i in 1..4
+  puts "Number is #{i}"
+end
+
 # if condition is false
 until value == 10
   puts value
@@ -190,9 +195,16 @@ end
 # next
 # redo 
 
+# Each method
+list = [1, 2, 3]
+list.each do |item|
+  puts item
+end
 
-
-
+h = { "name": "Breno", "years": 21 }
+h.each do |key, value|
+  puts "#{key}: #{value}"
+end
 
 
 
