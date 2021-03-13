@@ -21,3 +21,7 @@ message = %q(welcome #{name})
 # output Welcome #{name}
 message = %Q(welcome #{name})
 # output: Welcome John
+
+# String methods
+
+puts message.length # String size
