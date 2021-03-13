@@ -220,6 +220,25 @@ end
 Sum(b: 10,a: 5)
 
 
+# Palindrome
+def palindrome?(word)
+  word = word.downcase
+  reverse_word = ""
 
+  index = word.length
 
+  until index == 0
+    letter = word[index - 1]
+    reverse_word << letter
+    index -= 1
+  end
 
+  reverse_word == word 
+end
+
+puts palindrome?("Level")
+
+# Refactory using reverse method
+def palindrome?(word)
+  word.downcase == word.downcase.reverse
+end
