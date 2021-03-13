@@ -207,8 +207,17 @@ h.each do |key, value|
 end
 
 
+# Methods
+def Sum(a,b = 0)
+  a + b
+end
+# return is not required
+Sum(10,5)
 
-
+def Sum(a:,b: 0)
+  a + b
+end
+Sum(b: 10,a: 5)
 
 
 
