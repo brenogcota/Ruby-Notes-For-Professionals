@@ -1,6 +1,14 @@
+require "./classes/hello"
+
 # Class
-class Foo
+class Bar 
+end
+
+# Heritage
+class Foo < Bar
     attr_accessor :arg # getter and setter
+    attr_writer :arg   # only getter
+
     def initialize(arg)
         @arg = arg
     end
@@ -15,6 +23,9 @@ class Foo
 
     def arg=(new_arg)
         @arg = new_arg
+    end
+
+    private def privateMethod
     end
 end
 
